@@ -1,82 +1,124 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Website Wireframe</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      /* Define basic styles for the wireframe */
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      header, nav, section, aside, footer {
-        display: block;
-        margin: 0;
-        padding: 0;
-      }
-      header, footer {
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-      }
-      nav {
-        background-color: #ccc;
-        padding: 10px;
-      }
-      section, aside {
-        padding: 10px;
-        margin: 10px;
-        background-color: #f2f2f2;
-      }
-      /* Define basic layout for the wireframe */
-      header h1 {
-        margin: 0;
-      }
-      nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      nav ul li {
-        display: inline-block;
-        margin: 0 10px;
-      }
-      footer p {
-        margin: 0;
-      }
-      section, aside {
-        width: 48%;
-        float: left;
-      }
+<head>
+  <title>My Wireframe</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+    
+    header, nav, section, aside, footer {
+      display: block;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+    }
+    
+    header, footer {
+      background-color: #eee;
+    }
+    
+    nav {
+      background-color: #ddd;
+    }
+    
+    section {
+      clear: both;
+    }
+    
+    aside {
+      float: left;
+      width: 25%;
+      background-color: #f2f2f2;
+    }
+    
+    article {
+      float: right;
+      width: 70%;
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px;
+    }
+    
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+    
+    p {
+      margin-bottom: 20px;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    li {
+      margin-bottom: 10px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: #ddd;
+    }
+    
+    a:hover {
+      background-color: #bbb;
+    }
+    
+    @media (max-width: 768px) {
       section {
-        clear: left;
+        display: flex;
+        flex-wrap: wrap;
       }
-      @media (max-width: 600px) {
-        section, aside {
-          width: 100%;
-          float: none;
-        }
+      
+      aside {
+        float: none;
+        width: 100%;
       }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>My Website</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <section>
-      <h2>Section 1</h2>
-      <p>Placeholder text for section 1.</p>
-    </section>
+      
+      article {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <section>
     <aside>
-      <h2>Aside 1</h2>
-      <p>
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#">Category 1</a></li>
+        <li><a href="#">Category 2</a></li>
+        <li><a href="#">Category 3</a></li>
+        <li><a href="#">Category 4</a></li>
+      </ul>
+    </aside>
+    
+    <article>
+      <h2>Welcome to My Website</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar neque id metus accumsan, eu feugiat massa vestibulum. Nulla facilisi. Praesent vulputate convallis urna, nec bibendum lorem tristique in. Etiam ullamcorper mi ac felis ultricies pretium. Mauris ac turpis sit amet sapien bibendum faucibus ac
